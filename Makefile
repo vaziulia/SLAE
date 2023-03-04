@@ -129,6 +129,19 @@ SLAU/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/SLAU.dir/build.make src/CMakeFiles/SLAU.dir/build
 .PHONY : SLAU/fast
 
+#=============================================================================
+# Target rules for targets named run_test_test
+
+# Build rule for target.
+run_test_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_test_test
+.PHONY : run_test_test
+
+# fast build rule for target.
+run_test_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_test_test.dir/build.make test/CMakeFiles/run_test_test.dir/build
+.PHONY : run_test_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,6 +151,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SLAU"
+	@echo "... run_test_test"
 .PHONY : help
 
 

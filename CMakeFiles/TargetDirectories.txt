@@ -3,5 +3,6 @@
 /home/vasilisa/c++/SLAU/src/CMakeFiles/SLAU.dir
 /home/vasilisa/c++/SLAU/src/CMakeFiles/edit_cache.dir
 /home/vasilisa/c++/SLAU/src/CMakeFiles/rebuild_cache.dir
+/home/vasilisa/c++/SLAU/test/CMakeFiles/run_test_test.dir
 /home/vasilisa/c++/SLAU/test/CMakeFiles/edit_cache.dir
 /home/vasilisa/c++/SLAU/test/CMakeFiles/rebuild_cache.dir

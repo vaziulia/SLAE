@@ -116,6 +116,44 @@ depend:
 	cd /home/vasilisa/c++/SLAU && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+test/CMakeFiles/run_test_test.dir/rule:
+	cd /home/vasilisa/c++/SLAU && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_test_test.dir/rule
+.PHONY : test/CMakeFiles/run_test_test.dir/rule
+
+# Convenience name for target.
+run_test_test: test/CMakeFiles/run_test_test.dir/rule
+.PHONY : run_test_test
+
+# fast build rule for target.
+run_test_test/fast:
+	cd /home/vasilisa/c++/SLAU && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_test_test.dir/build.make test/CMakeFiles/run_test_test.dir/build
+.PHONY : run_test_test/fast
+
+test_test.o: test_test.cpp.o
+.PHONY : test_test.o
+
+# target to build an object file
+test_test.cpp.o:
+	cd /home/vasilisa/c++/SLAU && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_test_test.dir/build.make test/CMakeFiles/run_test_test.dir/test_test.cpp.o
+.PHONY : test_test.cpp.o
+
+test_test.i: test_test.cpp.i
+.PHONY : test_test.i
+
+# target to preprocess a source file
+test_test.cpp.i:
+	cd /home/vasilisa/c++/SLAU && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_test_test.dir/build.make test/CMakeFiles/run_test_test.dir/test_test.cpp.i
+.PHONY : test_test.cpp.i
+
+test_test.s: test_test.cpp.s
+.PHONY : test_test.s
+
+# target to generate assembly for a file
+test_test.cpp.s:
+	cd /home/vasilisa/c++/SLAU && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_test_test.dir/build.make test/CMakeFiles/run_test_test.dir/test_test.cpp.s
+.PHONY : test_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... run_test_test"
+	@echo "... test_test.o"
+	@echo "... test_test.i"
+	@echo "... test_test.s"
 .PHONY : help
 
 
