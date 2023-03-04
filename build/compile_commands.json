@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/vasilisa/c++/SLAU/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/SLAU.dir/main.cpp.o -c /home/vasilisa/c++/SLAU/main.cpp",
-  "file": "/home/vasilisa/c++/SLAU/main.cpp"
-}
-]
