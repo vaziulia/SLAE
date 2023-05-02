@@ -1,6 +1,9 @@
 .vscode/
 .vscode/launch.json
 .vscode/settings.json
+.gitignore
+
+run_test_*
 
 CMakeLists.txt.user
 CMakeCache.txt
