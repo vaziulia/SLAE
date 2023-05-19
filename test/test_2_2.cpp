@@ -19,17 +19,17 @@ double f(std::vector<double> x, CSR<double> matrix, std::vector<double> b,double
 
 
 int main(){
-    std::vector<double> values{10,11,13,15};
+    std::vector<double> values{15,17,20,22.5};
     std::vector<int> cols{0,1,2,3};
     std::vector<int> rows{0,1,2,3,4};
 
     CSR<double> matrix = CSR<double>(values,cols,rows);
 
-    std::vector<double> b{4,4,4,4};
+    std::vector<double> b{6,6,6,6};
     std::vector<double> x_mpi;
     std::vector<double> x_opt;
     std::vector<double> x_gd;
-    double c = 2;
+    double c = 3;
     double tolerance = 0.0000000000001;
     double tau = 0.9*2/15;
     double tau_opt = 2.0/(10+15);

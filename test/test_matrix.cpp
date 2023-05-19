@@ -51,47 +51,35 @@ TEST(matrix, DOKtoSCR){
     double b = 18;
     double a = 6;
 
+    int n = 5;
+
     std::vector<DOK<double>> dok;
-    for(int i = 0; i < 289; i ++){
+    for(int i = 0; i < n*n; i ++){
         dok.push_back({i, i, 2 * b});
     }
 
-    for(int i = 0; i < 288; i ++){
+    for(int i = 0; i < n*n-1; i ++){
         dok.push_back({i + 1, i, a});
         dok.push_back({i, i + 1, a});
     }
 
-    for(int i = 0; i < 272; i ++){
+    for(int i = 0; i < n*n-n; i ++){
         dok.push_back({i + 17, i, a});
         dok.push_back({i, i + 17, a});
     }
 
-    CSR<double> matrix = CSR<double>{dok, 289, 289};
+    CSR<double> matrix = CSR<double>{dok, n*n, n*n};
 
-
-    for(int i=0;i<10;++i){
-        for(int j=0;j<289;j++){
-            std::cout<<matrix(i,j)<<" ";
-        }
-        std::cout<<std::endl;
-    }
 }
 
+
+
 TEST(matrix, five_diag){
-    CSR<double> matrix = CSR<double>(7,3,4,5);
-    
-    /*
-    for(int i=0;i<7;++i){
-        for(int j=0;j<7;j++){
-            std::cout<<matrix(i,j)<<" ";
-        }
-        std::cout<<std::endl;
-    }
-    */
-   /*
-    for(int i=0;i<30;i++){
-            std::cout<<matrix.cols[i]<<" ";
-    }
-    */
-    
+    double b = 18;
+    double a = 41;
+
+    int n = 5;
+
+    CSR<double> matrix = CSR<double>{n, a, b};
+
 }
